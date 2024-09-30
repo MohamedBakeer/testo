@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="./CSS/tablet.css"
+      media="(max-width: 1200px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Document</title>
+  </head>
+
+  <body dir="rtl">
+    <nav class="header">
+      <div class="btns">
+        <button class="bars" id="bars" onclick="menubar()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="translate"><i class="fa-solid fa-globe"></i></button>
+      </div>
+
+      <div class="links" id="links">
+        <a href="#">الرئيسية</a>
+        <a href="#">معلومات عنا</a>
+        <a href="#">خدماتنا</a>
+        <a href="#">تواصل معنا</a>
+      </div>
+
+      <div class="image">
+        <img src="./logo.png" height="" alt="" />
+      </div>
+    </nav>
+    <div class="divetion"></div>
+
+    <footer>
+      <section>
+        <!-- <div class="right">right</div> -->
+        <div class="center">
+          <p>للتواصل</p>
+          <ul>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>عمارات اللإستثمار , الزاوية , ليبيا</span>
+            </p>
+            <p>
+              <i class="fa-brands fa-telegram"></i>
+              <span>welcome@almobader.ly</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <span dir="ltr">+ 218 91 961 18 49</span>
+            </p>
+          </ul>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="left">
+          <img src="./logo.png" alt="" />
+          <p>
+            تم التطوير بواسطة
+            <a href="">MNB Company</a>
+            ، جميع الحقوق محفوظة لـ <strong>LEABOZ</strong> .
+          </p>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      let btn_menu = document.getElementById("bars");
+      let links = document.getElementById("links");
+      function menubar() {
+        // btn_menu.style.backgroundColor = "blue";
+        if (links.style.right == "0px") {
+          // console.log('hi' );
+          btn_menu.innerHTML = '<i class="fa-solid fa-bars"></i>';
+          links.style.right = "-1000px";
+        } else {
+          // console.log('hi 2' );
+          btn_menu.innerHTML = '<i class="fa-solid fa-caret-down"></i>';
+          links.style.right = "0px";
+        }
+        console.log(links.style.right);
+      }
+    </script>
+  </body>
+</html>

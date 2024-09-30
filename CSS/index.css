@@ -1,0 +1,235 @@
+/* ------------------Genrall Setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "LBC";
+  font-style: normal;
+  transition: 0.3s all;
+  scroll-behavior: smooth;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+.divetion {
+  width: 95%;
+  height: 100vh;
+  /* background-color: brown; */
+  margin: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 1201px) {
+  nav {
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+  nav > div {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 50%;
+    margin: 0 20px;
+  }
+
+  nav > .image {
+    justify-content: left;
+    /* align-items: center; */
+    /* width: 100%; */
+  }
+
+  nav > .image img {
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    height: 100%;
+  }
+
+  nav > .links {
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  nav > .links > a {
+    text-decoration: none;
+    /* border: 1px solid green; */
+    color: #818286;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  nav > .links > a:hover {
+    color: #221e1f;
+  }
+
+  nav > .btns {
+    align-items: center;
+    justify-content: right;
+  }
+
+  nav > .btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #818286;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px #fff;
+  }
+
+  nav > .btns button:hover {
+    background-color: #818286;
+    box-shadow: 0px 0px 5px 0px #221e1f;
+    color: white;
+    transition: 0.1s all;
+    font-size: 1.6rem;
+  }
+
+  nav > .btns .bars {
+    display: none;
+    transition: 0.1s all;
+  }
+
+  /* footer */
+  footer {
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 10%;
+  }
+  footer > section {
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #221e1f;
+    padding: 20px;
+  }
+  footer > section > div {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: 20px;
+  }
+  footer .left {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .left > img {
+    /* border: 1px solid rebeccapurple; */
+    width: 50%;
+  }
+  footer .left p {
+    width: 50%;
+    font-size: 100%;
+    font-weight: 700;
+    word-spacing: 5px;
+  }
+  footer .left a,
+  footer .left strong {
+    color: #818286;
+  }
+  footer .left a:hover,
+  footer .left strong:hover {
+    font-size: 102%;
+  }
+
+  footer .center {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 90px; */
+  }
+  footer .center > * {
+    /* border: 1px solid green; */
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .center > p {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .center > ul {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .center > ul > p {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    /* border: 1px solid red; */
+    color: #221e1f;
+    font-size: 1.3rem;
+  }
+  .center > ul > p > i {
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+  .center > .social {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .center > .social a {
+    font-size: 1.3rem;
+    padding: 5px 15px;
+
+    color: #221e1f;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    transform: scale(1.01);
+  }
+  .center > .social a:hover {
+    color: #f5f5f5;
+    background-color: #221e1f;
+  }
+}
